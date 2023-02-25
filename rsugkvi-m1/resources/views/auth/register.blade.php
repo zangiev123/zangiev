@@ -26,6 +26,49 @@
                         </div>
 
                         <div class="row mb-3">
+                            <label for="surname" class="col-md-4 col-form-label text-md-end">{{ __('Surame') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="Surname" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+                                @error('name')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="patronymic" class="col-md-4 col-form-label text-md-end">{{ __('Patronymic') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="patronymic" type="text" class="form-control @error('patronymic') is-invalid @enderror" name="patronymic" value="{{ old('patronymic') }}" required autocomplete="name" autofocus>
+
+                                @error('patronymic')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="Login" class="col-md-4 col-form-label text-md-end">{{ __('Login') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="Login" type="Login" class="form-control @error('Login') is-invalid @enderror" name="Login" value="{{ old('Login') }}" required autocomplete="email">
+
+                                @error('Login')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+
+                        <div class="row mb-3">
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
 
                             <div class="col-md-6">
@@ -54,10 +97,10 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
+                            <label for="password_confirmation" class="col-md-4 col-form-label text-md-end">{{ __('Password repeat') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                <input id="password_confirmation" type="password" class="form-control" name="password_confirmation" required autocomplete="password_confirmation">
                             </div>
                         </div>
 
