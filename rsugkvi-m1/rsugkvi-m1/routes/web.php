@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,10 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/public/catalog', function () {
+    return view('catalog');
+});
+
+Route::get('/', function (){
+    return view('homepage');
 });
 
 Auth::routes();
 
-Route::get('/catalog', [App\Http\Controllers\tablController::class, 'show'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
