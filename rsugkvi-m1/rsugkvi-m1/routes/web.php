@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/public/catalog', function () {
+Route::get('/catalog', function () {
     return view('catalog');
 });
 
