@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/*container*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.header{
+    width: 100%;
+    padding-top: 30px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.header__logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.nav{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.nav__link{
+    display: inline-block;
+    vertical-align:top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+
+}
+
+.nav__link:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+
+
+    background-color: #ffffff;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity 0.4s linear;
+}
+
+.nav__link:hover{
+    color: #ffffff;
+
+}
+
+.nav__link:hover:after{
+    opacity: 1;
+}
+/*шапка*/
+
+/*страница*/
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(62, 68, 61);
+    /*background: url("../images/b9a36d90547f6d643d654227cfb98b69.jpg") center
+    no-repeat;*/
+    /*выравнивание по всей площади*/
+    -webkit-background-size: cover;
+    background-size: cover;
+    line-height: 1;
+
+}
+/*главная страница*/
+
+.border{
+    margin: 0 auto;
+    width: 950px;
+    height: 650px;
+    background-color: rgb(62, 68, 61);
+    border: 3px solid #000;
+
+
+}
+
+
+.text{
+    color: #000;
+}
+.text_border_1{
+    font-size: 35px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.text_border_2{
+    margin-top: 35px;
+    line-height: 1.5;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+/*главная страница*/
+
+/*каталог*/
+.box{
+    margin: 0 auto;
+    margin-bottom: 200px;
+
+}
+
+.tip{
+    width: 282px;
+    height: 250px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    display: inline-block;
+    margin: 0 45px 120px;
+    text-decoration: none;
+
+
+
+
+}
+
+.box_name{
+    margin: 0 auto 50px;
+
+    min-width: 1200px;
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #000;
+    border: 3px solid #000000;
+}
+
+.tip_name{
+
+    text-align: center;
+    font-size: 25px;
+    color: #ffffff;
+    border: 5px solid #000000;
+    background-color: #000;
+    border-radius: 5px;
+
+
+}
+
+/*каталог*/
+
+
+/*товары*/
+
+.section{
+    width: 1400px;
+    height: 100%;
+    background-color:#ffffff;
+    margin: 0 auto;
+
+}
+
+.section_head{
+    width: 100%;
+    height: 150px;
+    background-color: #000;
+
+}
+
+.section_name{
+    color: #ffffff;
+    font-size: 50px;
+}
+
+/*товары*/
+

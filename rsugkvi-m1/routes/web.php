@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\catalogcontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +14,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
-Route::get('/', function () {
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/',function(){
     return view('welcome');
 });
 
-Auth::routes();
+Route::get('/catalog',function(){
+    return view('catalog');
+});
 
-Route::get('/catalog', [App\Http\Controllers\tablController::class, 'show'])->name('home');
+
+
