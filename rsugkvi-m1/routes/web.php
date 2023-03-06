@@ -18,8 +18,13 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+<<<<<<< HEAD
 Route::get('/',function(){
     return view('welcome');
+=======
+Route::get('/', function () {
+    return view('homepage');
+>>>>>>> 633cfdf08b1a2dd18314d33a4bbd431a70e0f297
 });
 
 Route::get('/catalog',function(){
@@ -28,3 +33,7 @@ Route::get('/catalog',function(){
 
 
 
+<<<<<<< HEAD
+=======
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+>>>>>>> 633cfdf08b1a2dd18314d33a4bbd431a70e0f297

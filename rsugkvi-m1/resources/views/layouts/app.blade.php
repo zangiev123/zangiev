@@ -16,7 +16,10 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<<<<<<< HEAD
     
+=======
+>>>>>>> 633cfdf08b1a2dd18314d33a4bbd431a70e0f297
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
