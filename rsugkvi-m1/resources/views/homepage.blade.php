@@ -2,6 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="/resources/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Шапка-->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">True Games</div>
+                <nav class="nav">
+                    <a class="nav__link" href="/public">О нас</a>
+                    <a class="nav__link" href="/public/catalog">Католог</a>
+                    <a class="nav__link" href="">Где нас найти?</a>
+                    <a class="nav__link" href="">Регистрация</a>
+                    <a class="nav__link" href="">Вход</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    @yield('header')
+<!--Шапка-->
+<!--главная страница-->
+<!--главная страница-->
+=======
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -245,5 +273,6 @@ h1, h2, h3, h4, h5, h6 {
     color: rgb(255, 0, 0);
 }
 </style>
+>>>>>>> 633cfdf08b1a2dd18314d33a4bbd431a70e0f297
 </body>
 </html>
